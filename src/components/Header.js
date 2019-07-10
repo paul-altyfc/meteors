@@ -8,7 +8,7 @@ const Header = () => {
         src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"
         alt='NASA "meatball" logo'
       />
-      <h1 className="App-title">Meteor Landings</h1>
+      <h1 className="App-title">NASA Meteor Landings</h1>
     </header>
   );
 };

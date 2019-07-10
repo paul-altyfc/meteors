@@ -4,7 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import MeteorList from './components/MeteorList';
 import MapDisplay from './components/MapDisplay';
-import MeteorTable from './components/MeteorTable';
+import MeteorDisplayTable from './components/MeteorDisplayTable';
+//import MeteorTable from './components/MeteorTable';
 //import ReactLeaflet from 'react-leaflet';
 
 class App extends React.Component {
@@ -16,7 +17,8 @@ class App extends React.Component {
       <div className="App">
         <Header />
         {/* <MapDisplay lat={this.state.lat} long={this.state.long} /> */}
-        <MeteorTable meteors={this.state.meteors} />
+        {/* <MeteorTable meteors={this.state.meteors} /> */}
+        <MeteorDisplayTable meteors={this.state.meteors} />
         <MapDisplay meteors={this.state.meteors} />
         <MeteorList meteors={this.state.meteors} />
       </div>
@@ -36,7 +38,5 @@ class App extends React.Component {
       .catch(err => console.log(err));
   }
 }
-
-// render(map, document.getElementById('map-container'));
 
 export default App;

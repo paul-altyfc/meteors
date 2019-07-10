@@ -1,9 +1,9 @@
 import React from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import './MapDisplay.css';
-// import MeteorList from './MeteorList';
 
 function MapDisplay({ meteors }) {
+  console.log({ meteors });
   return (
     <div className="leaflet-container">
       <Map center={[50.775, 6.0833]} zoom={13}>
